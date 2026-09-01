@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Narrator - Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for AI Narrator.">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f8fafc;
+        --text-muted: #94a3b8;
+        --border: #334155;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+    }
+    .header-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.1rem;
+    }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--primary);
+    }
+    main {
+      max-width: 800px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+    .content-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .updated-date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      background-color: var(--card-bg);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-container">
+        <div class="logo-icon">🎙️</div>
+        <span>AI Narrator</span>
+      </a>
+      <nav>
+        <a href="index.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-card">
+      <h1>Privacy Policy</h1>
+      <div class="updated-date">Last updated: August 2026</div>
+
+      <h2>Overview</h2>
+      <p>AI Narrator is built from the ground up with user privacy in mind. We do not collect personal identifying information, sell personal data, or track users across third-party websites or services.</p>
+
+      <h2>On-Device Scanning & OCR Processing</h2>
+      <p>AI Narrator processes Scan & Listen pages directly on the device. A captured page is copied to the app’s private temporary directory, used only for OCR and local speech playback, and is deleted when the reading session ends or the page is replaced. The app does not upload the image, recognized text, or OCR layout data, and does not include it in analytics or diagnostics.</p>
+
+      <h2>Camera Access & Permissions</h2>
+      <p>If camera access is denied, the scanner reports the denial or unavailability without retaining any page. The system scanner owns the camera permission prompt; AI Narrator does not request camera access before you initiate a scan.</p>
+
+      <h2>Text-to-Speech & Narration</h2>
+      <p>Scan & Listen reads recognized text aloud using the device’s own text-to-speech engine (Apple TTS on iOS/macOS) or the bundled Kokoro voice model. Recognized text is passed to that engine only to be spoken and is not retained by AI Narrator afterward.</p>
+      <p>AI Narrator’s mobile workspace preview always uses the bundled on-device Kokoro voice. Exporting presentations and audiobooks gives you the option of using on-device synthesis without transmitting text to external cloud servers.</p>
+
+      <h2>Third-Party Services & Diagnostics</h2>
+      <p>On Android, Scan & Listen utilizes Google Play services ML Kit Document Scanner for camera capture and text recognition, which operates according to Google Play services terms. On iOS and macOS, native system frameworks are utilized locally.</p>
+
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or your data privacy while using AI Narrator, please contact us at <a href="mailto:alpinist@gmail.com">alpinist@gmail.com</a> or visit our <a href="index.html">Support Page</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 AI Narrator. All rights reserved. &bull; <a href="index.html">Support Center</a> &bull; <a href="mailto:alpinist@gmail.com">Contact</a></p>
+  </footer>
+
+</body>
+</html>
